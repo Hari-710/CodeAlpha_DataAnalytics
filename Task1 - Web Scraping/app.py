@@ -8,7 +8,7 @@ data = []
 
 for p in range(1, 51):
     url1 = url.format(p)
-    response = requests.get(url=url)
+    response = requests.get(url=url1)
     response.encoding = "utf-8"
     soup = BeautifulSoup(response.text, 'lxml')
 
